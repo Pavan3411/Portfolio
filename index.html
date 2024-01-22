@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d38f22ce63.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Web Developer</p>
+                <h1>Hi , I'm <span>Pavan </span><br> Suthar From Gujarat</h1>
+            </div>
+        </div>
+    </div>
+    <!----- about ----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Passionate about technology and innovation, I bring expertise in frontend technologies (HTML, CSS, JavaScript, ReactJS) and PHP, with a good foundation in database management. Aspiring to be a dynamic developer, my focus is on delivering impactful solutions to the tech industry. With proven adaptability, time management, and leadership skills, I am dedicated to staying ahead of technological advancements. Explore my portfolio to witness my commitment to excellence and enthusiasm for contributing to the evolving field of technology.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links " onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li> <span>Web Designer</span><br>Crafting visually stunning web interfaces is my passion. With a keen eye for design trends and user experience, I specialize in creating captivating and intuitive websites that leave a lasting impression. I strive to deliver aesthetically pleasing digital experiences tailored to your brand. </li>
+                                <li> <span>Web Developer</span><br>  As a dedicated web developer, I bring your ideas to life through seamless and efficient web interfaces. Let's collaborate to build dynamic and impactful online experiences.</li>
+                                <li> <span>Php Developer</span><br> Elevate your web presence with my PHP development skills. Specializing in designing web interfaces with a focus on PHP, I create dynamic and feature-rich websites. Let's work together to bring innovation and functionality to your online platform. </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li> <span>2021-Current</span><br>Web Developer => Crafting dynamic and efficient web solutions to meet current industry standards.</li>
+                                <li> <span>2019-2021</span><br>Frontend Developer => Specializing in creating engaging and responsive user interfaces for optimal user experiences.</li>
+                                <li> <span>2017-2019</span><br>Web Designer => Designing visually appealing and functional web interfaces to enhance online presence. </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li> <span>2020-Current</span><br>Btech. Computer Science Engineering <br>
+                                    Parul University, Vadodara</li>
+                                <li> <span>2018-2020</span><br> Higher Secondary School <br>
+                                    Shreyas Vidhyalaya, Vadodara</li>
+                                <li> <span>2016-2018</span><br> Secondary School <br>
+                                    Ambe School, Vadodara</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------services---------------------------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>As a web designer, I specialize in creating visually stunning and user-friendly websites. From responsive designs to intuitive interfaces, I focus on delivering a seamless online experience that aligns with your brand. I'm here to enhance your online presence with captivating web design.</p>
+                    <a href="#">Learn More</a> </div>
+                    <div>
+                        <i class="fa-brands fa-js"></i>
+                        <h2>Web Developer</h2>
+                    <p>I offer comprehensive web development services, crafting visually appealing, user-friendly websites. Expertise in robust backend systems, seamless database integration, e-commerce, and custom API development. Let's collaborate for an elevated online presence and engaging digital experience.</p>
+                    <a href="#">Learn More</a>
+                    </div>
+                   <div>
+                    <i class="fa-brands fa-php"></i>
+                    <h2>Php developer</h2>
+                    <p>As a PHP developer, I create dynamic websites with custom solutions. My services include robust backend systems, seamless database integration, responsive design, e-commerce, and API development. Let's bring your ideas to life with efficient and scalable PHP solutions.</p>
+                    <a href="#">Learn More</a>
+                   </div> 
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- -------------portfolio------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Portfolio</h3>
+                        <p>Tech: HTML, CSS, JavaScript
+                            Responsive: Developed mobile-friendly personal portfolio website. Content: Showcased key details like name, skills, and work experience. 
+                            Contact Form: Integrated form with Google Sheets for streamlined communication.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>VidTube</h3>
+                        <p>Tech: HTML, CSS, JavaScript
+                            Pages: Home with sidebar, banner, video list; Video watch with content, comments, suggested videos.
+                            Responsive: Ensured small-screen adaptability. Inspired Design: YouTube-influenced layout.
+                            </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>React Brand Page</h3>
+                        <p>Tech: React JS, HTML, CSS, JavaScript
+                            Component Development: Explored React basics, benefits, and project structuring.
+                            Responsiveness & Styling: Ensured mobile adaptability with flexbox.
+                            </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- ------------------contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>sutharpavan9153@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91-9328496120</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/?lang=en-in"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/pavan-suthar99/"><i class="fa-brands fa-linkedin"></i></a>
+                        
+                    </div>
+                    <a href="/images/Pavan-Khushalaram-Suthar-RESUME.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright ©️. Made by <i class="fa-solid fa-heart"></i> Pavan Suthar</p>
+        </div>
+    </div>
+    <!-- <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+        }
+    </script> -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname) {
+            for (var i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active-link");
+            }
+            for (var i = 0; i < tabcontents.length; i++) {
+                tabcontents[i].classList.remove("active-tab");
+            }
+    
+            // Find the clicked tab and content by ID
+            var selectedTab = document.getElementById(tabname);
+            var selectedTabLink;
+    
+            // Update the corresponding tab link as active
+            for (var i = 0; i < tablinks.length; i++) {
+                if (tablinks[i].textContent.trim() === tabname) {
+                    selectedTabLink = tablinks[i];
+                    break;
+                }
+            }
+    
+            // Set the selected tab and link as active
+            if (selectedTab && selectedTabLink) {
+                selectedTab.classList.add("active-tab");
+                selectedTabLink.classList.add("active-link");
+            }
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    <form name="submit-to-google-sheet">
+        <!-- <input name="email" type="email" placeholder="Email" required>
+        <button type="submit">Send</button> -->
+      </form>
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwTM-72noJGYK1bD__59cAUFDgZbLy7gjnVZwbSrLvoD2_HLmp-mgXMdQXjtfIwAsiY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message Sent succesfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
